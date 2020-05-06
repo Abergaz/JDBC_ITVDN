@@ -14,7 +14,7 @@ public class Main {
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         try (Connection connection = DriverManager.getConnection(url, userName, pass);
-             BufferedReader bufferedReader = new BufferedReader(new FileReader("src\\main\\java\\book.sql"));
+             BufferedReader bufferedReader = new BufferedReader(new FileReader("src\\main\\resources\\book.sql"));
              Scanner scanner = new Scanner(bufferedReader);
              Statement statement = connection.createStatement();
         ){
